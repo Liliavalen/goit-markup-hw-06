@@ -183,18 +183,12 @@ ul {
 .caption-adr:hover,
 .caption-adr:focus {
     color: var(--accent-color);
-    
+
 }
-/*
-.col{
+
+.col {
     fill: currentColor;
 }
-
-
-.caption-adr:hover .col,
-.caption-adr:focus .col{
-    fill: #2196F3
-}*/
 
 /*----------------------main----------------------*/
 
@@ -299,7 +293,7 @@ ul {
     color: var(--primary-text-color);
 }
 
-.features-icons{
+.features-icons {
     background-color: var(--second-fon-color);
     width: 270px;
     height: 120px;
@@ -325,7 +319,7 @@ ul {
     padding-top: 50px;
 }
 
-.services-list .services-element+.services-element{
+.services-list .services-element+.services-element {
     margin-left: 30px;
 }
 
@@ -342,7 +336,7 @@ ul {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
         0px 1px 1px rgba(0, 0, 0, 0.14),
         0px 2px 1px rgba(0, 0, 0, 0.2);
-    
+
 }
 
 .team-title {
@@ -375,6 +369,7 @@ ul {
     width: 44px;
     height: 44px;
 }
+
 .soc-team {
     width: 100%;
     height: 100%;
@@ -383,23 +378,24 @@ ul {
     align-items: center;
     justify-content: center;
 
-   /* outline: 1px solid darkblue;
+    /* outline: 1px solid darkblue;
     background-color: #2196F3;*/
 }
+
 .soc-team-icon {
     fill: #AFB1B8;
 }
 
 .soc-team:focus,
-.soc-team:hover{
+.soc-team:hover {
     background-color: #2196F3;
- }
+}
 
 .soc-team:focus .soc-team-icon {
     fill: #FFFFFF;
 }
 
-.soc-team:hover .soc-team-icon{
+.soc-team:hover .soc-team-icon {
     fill: #FFFFFF;
 }
 
@@ -431,17 +427,17 @@ ul {
     color: var(--title-color);
 }
 
-.client-list{
+.client-list {
     list-style: none;
     display: flex;
     margin-top: 50px;
-     
+
     gap: 30px;
     padding: 0;
 }
 
- 
-.client-logos{
+
+.client-logos {
     width: 170px;
     height: 92px;
     border-radius: 4%;
@@ -456,15 +452,15 @@ ul {
     align-items: center;
     justify-content: center;
 }
-     
+
 .client-logos .sing {
     fill: #AFB1B8;
 }
- 
+
 .client-logos:focus,
 .client-logos:hover {
     border-color: #2196F3;
-    border-style: solid; 
+    border-style: solid;
     border-width: 1px;
 }
 
@@ -472,8 +468,8 @@ ul {
     fill: #2196F3;
 }
 
-        
-     
+
+
 /*------------------footer---------------------*/
 
 
@@ -535,16 +531,17 @@ ul {
 .address {
     margin-top: 20px;
 }
-.footer-container{
+
+.footer-container {
     display: flex;
     padding: 0;
 }
 
-.block-footer{
+.block-footer {
     margin-left: 70px;
 }
 
-.fotter-title{
+.fotter-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -583,7 +580,7 @@ ul {
 }
 
 .foot-soc-team:hover,
-.foot-soc-team:focus{
+.foot-soc-team:focus {
     background-color: #2196F3;
 }
 

@@ -1,206 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-    rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Document</title>
 </head>
 
 <body>
-<!--Heder-->
-<header class="caption">
+    <!--Heder-->
+    <header class="caption">
 
-    <!--Навігація-->
+        <!--Навігація-->
 
-    <div class="container main-nav">
+        <div class="container main-nav">
 
-        <nav class="header-nav list">
-            <a href="index.html" class="caption-logo">
-            <span lang="en" class="logo">Web</span>Studio</a>
+            <nav class="header-nav list">
+                <a href="index.html" class="caption-logo">
+                    <span lang="en" class="logo">Web</span>Studio</a>
 
-            <ul class="menu-items list">
-                <li class="menu-item"><a href="./index.html" class="caption-item">Студія</a></li>
-                <li class="menu-item"><a href="./portfolio.html" class="caption-item">Портфоліо</a></li>
-                <li class="menu-item"><a href="" class="caption-item">Контакти</a></li>
+                <ul class="menu-items list">
+                    <li class="menu-item"><a href="./index.html" class="caption-item">Студія</a></li>
+                    <li class="menu-item"><a href="./portfolio.html" class="caption-item">Портфоліо</a></li>
+                    <li class="menu-item"><a href="" class="caption-item">Контакти</a></li>
+                </ul>
+
+            </nav>
+
+            <!--Контакти-->
+            <ul class="caption-items list">
+                <li class="caption-el">
+                    <a href="mailto:info@devstudio.com" class="caption-adr">
+                        <svg class="col" width="16" height="12">
+                            <use href="./images/icons.svg#icon-envelope"></use>
+                        </svg>info@devstudio.com
+                    </a>
+                </li>
+                <li class="caption-el">
+                    <a href="tel:+380961111111" class="caption-adr">
+                        <svg class="col" width="10" height="16">
+                            <use href="./images/icons.svg#icon-smartphone"></use>
+                        </svg>+38 096 111 11 11
+                    </a>
+                </li>
             </ul>
-            
-        </nav>
 
-       <!--Контакти-->
-        <ul class="caption-items list">
-                <li class="caption-el"><a href="mailto:info@devstudio.com" class="caption-adr">info@devstudio.com</a> </li>
-                <li class="caption-el"><a href="tel:+380961111111" class="caption-adr">+38 096 111 11 11</a></li>
-        </ul>
-        
-    </div>
-</header>
+        </div>
+    </header>
 
     <section class="section">
         <div class="container">
-        <h1 class="heading">Галерея</h1>
-        <div class="center">
-        <ul class="list button-tab">
-            <li class="gallery-item"><button type="button" class="gallery-button gallery-item">Усі</button></li>
-            <li class="gallery-item"><button type="button" class="gallery-button">Веб-сайти</button></li>
-            <li class="gallery-item"><button type="button" class="gallery-button">Додатки</button></li>
-            <li class="gallery-item"><button type="button" class="gallery-button">Дизайн</button></li>
-            <li class="gallery-item"><button type="button" class="gallery-button">Маркетинг</button></li>
-        </ul>
-        </div>
-        <ul class="list gallery-tab">
-            <li class="gallery-shad">
-                <a href="" class="gallery-link">
-                <img class="gallery-images" src="./images/gal1.jpg" alt="Команда спеціалістів" width="370" height="294">
-                <div class="gallery-text">
-                <h2 class="gallery-headline">Технокряк</h2>
-                <p  class="gallery-desk">Веб-сайт</p>
-                </div>
-            </a> 
-            </li>
-
-            <li class="gallery-shad">
-                <a href="" class="gallery-link">
-                <img class="gallery-images" src="./images/gal2.jpg" alt="Гравці в баскетбол" width="370" height="294">
-                <div class="gallery-text">
-                <h2 class="gallery-headline">Постер New Orlean vs Golden Star</h2>
-                <p class="gallery-desk">Дизайн</p>
-                </div>
-                </a>
-            </li>
-
-            <li class="gallery-shad">
-                <a href="" class="gallery-link">
-                <img class="gallery-images" src="./images/gal3.jpg" alt="Постер із зображенням логотипу ресторану" width="370" height="294">
-                <div class="gallery-text">
-                <h2 class="gallery-headline">Ресторан Seafood</h2>
-                <p class="gallery-desk">Додаток</p>
-                </div>
-                </a>
-            </li>
-
-            <li class="gallery-shad">
-                <a href="" class="gallery-link">
-                <img class="gallery-images" src="./images/gal4.jpg" alt="Навушники" width="370" height="294">
-                <div class="gallery-text"> 
-                <h2 class="gallery-headline">Проект Прайм</h2>
-                <p class="gallery-desk">Маркетинг</p>
-                </div>
-                </a>
-            </li>
-
-            <li class="gallery-shad">
-                <a href="" class="gallery-link">
-                <img class="gallery-images" src="./images/gal5.jpg" alt="Дві коробки з логотипами" width="370" height="294">
-                <div class="gallery-text">
-                <h2 class="gallery-headline">Проект Boxes</h2>
-                <p class="gallery-desk">Додаток</p>
-                </div>
-                </a>
-            </li>
-
-            <li class="gallery-shad">
-                <a href="" class="gallery-link">
-                <img class="gallery-images" src="./images/gal6.jpg" alt="Екран монітора з головною сторінкою сайту" width="370" height="294">                    
-                <div class="gallery-text">
-                <h2 class="gallery-headline">Inspiration has no Borders</h2>
-                <p class="gallery-desk">Веб-сайт</p>
-                </div>
-                </a>
-            </li>
-
-            <li class="gallery-shad">
-                <a href="" class="gallery-link">
-                <img class="gallery-images" src="./images/gal7.jpg" alt="Сторінка журналу" width="370" height="294">
-                <div class="gallery-text">
-                <h2 class="gallery-headline">Видання Limited Edition</h2>
-                <p class="gallery-desk">Дизайн</p>
-                </div>
-                </a>
-            </li>
-
-            <li class="gallery-shad">
-                <a href="" class="gallery-link">
-                <img class="gallery-images" src="./images/gal8.jpg" alt="Етикетка з торговою маркою" width="370" height="294">
-                <div class="gallery-text">
-                <h2 class="gallery-headline">Проєкт LAB</h2>
-                <p class="gallery-desk">Маркетинг</p>
-                </div>
-                </a>
-            </li>
-
-            <li class="gallery-shad">
-                <a href="" class="gallery-link">
-                <img class="gallery-images" src="./images/gal9.jpg" alt="Руки людини на клавіатурі ноутбука" width="370" height="294">
-                <div class="gallery-text">
-                <h2 class="gallery-headline">Growing Business</h2>
-                <p class="gallery-desk">Додаток</p>
-                </div>
-                </a>
-            </li>
-        </ul>
-        </div>
-    </section>
-
-<!--Підвал-->
-<footer class="contacts foot-box">
-    <div class="container footer-container">
-        <div>
-            <a href="index.html" class="contacts-logo">
-                <span lang="en" class="logo">Web</span>Studio</a>
-            <address class="address">
-                <ul class="list">
-                    <li class="botton-menu"><a href="https://goo.gl/maps/SFGfmpYm7TjPDnSy7" target="_blank"
-                            rel="noreferrer noopener" class="contacts-adr contacts-citi">м. Київ, пр-т Лесі Українки,
-                            26</a></li>
-                    <li class="botton-menu"><a href="mailto:info@devstudio.com"
-                            class="contacts-adr">info@devstudio.com</a></li>
-                    <li class="botton-menu"><a href="tel:+380961111111" class="contacts-adr">+38 096 111 11 11</a></li>
+            <h1 class="heading">Галерея</h1>
+            <div class="center">
+                <ul class="list button-tab">
+                    <li class="gallery-item"><button type="button" class="gallery-button gallery-item">Усі</button></li>
+                    <li class="gallery-item"><button type="button" class="gallery-button">Веб-сайти</button></li>
+                    <li class="gallery-item"><button type="button" class="gallery-button">Додатки</button></li>
+                    <li class="gallery-item"><button type="button" class="gallery-button">Дизайн</button></li>
+                    <li class="gallery-item"><button type="button" class="gallery-button">Маркетинг</button></li>
                 </ul>
-            </address>
-        </div>
+            </div>
+            <ul class="list gallery-tab">
+                <li class="gallery-shad">
+                    <a href="" class="gallery-link">
+                        <img class="gallery-images" src="./images/gal1.jpg" alt="Команда спеціалістів" width="370"
+                            height="294">
+                        <div class="gallery-text">
+                            <h2 class="gallery-headline">Технокряк</h2>
+                            <p class="gallery-desk">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
 
+                <li class="gallery-shad">
+                    <a href="" class="gallery-link">
+                        <img class="gallery-images" src="./images/gal2.jpg" alt="Гравці в баскетбол" width="370"
+                            height="294">
+                        <div class="gallery-text">
+                            <h2 class="gallery-headline">Постер New Orlean vs Golden Star</h2>
+                            <p class="gallery-desk">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
 
-        <div class="block-footer">
-            <h3 class="fotter-title">Приєднуйтесь</h3>
-            <ul class="networks-footer">
-                <li class="social-teams">
-                    <a class="foot-soc-team" href="#">
-                        <svg class="foot-soc-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-instagram"></use>
-                        </svg>
+                <li class="gallery-shad">
+                    <a href="" class="gallery-link">
+                        <img class="gallery-images" src="./images/gal3.jpg"
+                            alt="Постер із зображенням логотипу ресторану" width="370" height="294">
+                        <div class="gallery-text">
+                            <h2 class="gallery-headline">Ресторан Seafood</h2>
+                            <p class="gallery-desk">Додаток</p>
+                        </div>
                     </a>
                 </li>
-                <li class="social-teams">
-                    <a class="foot-soc-team" href="#">
-                        <svg class="foot-soc-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-twitter"></use>
-                        </svg>
+
+                <li class="gallery-shad">
+                    <a href="" class="gallery-link">
+                        <img class="gallery-images" src="./images/gal4.jpg" alt="Навушники" width="370" height="294">
+                        <div class="gallery-text">
+                            <h2 class="gallery-headline">Проект Прайм</h2>
+                            <p class="gallery-desk">Маркетинг</p>
+                        </div>
                     </a>
                 </li>
-                <li class="social-teams">
-                    <a class="foot-soc-team" href="#">
-                        <svg class="foot-soc-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-facebook1"></use>
-                        </svg>
+
+                <li class="gallery-shad">
+                    <a href="" class="gallery-link">
+                        <img class="gallery-images" src="./images/gal5.jpg" alt="Дві коробки з логотипами" width="370"
+                            height="294">
+                        <div class="gallery-text">
+                            <h2 class="gallery-headline">Проект Boxes</h2>
+                            <p class="gallery-desk">Додаток</p>
+                        </div>
                     </a>
                 </li>
-                <li class="social-teams">
-                    <a class="foot-soc-team" href="#">
-                        <svg class="foot-soc-icon" width="20" height="20">
-                            <use href="./images/icons.svg#icon-linkedin2"></use>
-                        </svg>
+
+                <li class="gallery-shad">
+                    <a href="" class="gallery-link">
+                        <img class="gallery-images" src="./images/gal6.jpg"
+                            alt="Екран монітора з головною сторінкою сайту" width="370" height="294">
+                        <div class="gallery-text">
+                            <h2 class="gallery-headline">Inspiration has no Borders</h2>
+                            <p class="gallery-desk">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="gallery-shad">
+                    <a href="" class="gallery-link">
+                        <img class="gallery-images" src="./images/gal7.jpg" alt="Сторінка журналу" width="370"
+                            height="294">
+                        <div class="gallery-text">
+                            <h2 class="gallery-headline">Видання Limited Edition</h2>
+                            <p class="gallery-desk">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="gallery-shad">
+                    <a href="" class="gallery-link">
+                        <img class="gallery-images" src="./images/gal8.jpg" alt="Етикетка з торговою маркою" width="370"
+                            height="294">
+                        <div class="gallery-text">
+                            <h2 class="gallery-headline">Проєкт LAB</h2>
+                            <p class="gallery-desk">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+
+                <li class="gallery-shad">
+                    <a href="" class="gallery-link">
+                        <img class="gallery-images" src="./images/gal9.jpg" alt="Руки людини на клавіатурі ноутбука"
+                            width="370" height="294">
+                        <div class="gallery-text">
+                            <h2 class="gallery-headline">Growing Business</h2>
+                            <p class="gallery-desk">Додаток</p>
+                        </div>
                     </a>
                 </li>
             </ul>
         </div>
-    </div>
+    </section>
 
-</footer>
+    <!--Підвал-->
+    <footer class="contacts foot-box">
+        <div class="container footer-container">
+            <div>
+                <a href="index.html" class="contacts-logo">
+                    <span lang="en" class="logo">Web</span>Studio</a>
+                <address class="address">
+                    <ul class="list">
+                        <li class="botton-menu"><a href="https://goo.gl/maps/SFGfmpYm7TjPDnSy7" target="_blank"
+                                rel="noreferrer noopener" class="contacts-adr contacts-citi">м. Київ, пр-т Лесі
+                                Українки,
+                                26</a></li>
+                        <li class="botton-menu"><a href="mailto:info@devstudio.com"
+                                class="contacts-adr">info@devstudio.com</a></li>
+                        <li class="botton-menu"><a href="tel:+380961111111" class="contacts-adr">+38 096 111 11 11</a>
+                        </li>
+                    </ul>
+                </address>
+            </div>
+
+
+            <div class="block-footer">
+                <h3 class="fotter-title">Приєднуйтесь</h3>
+                <ul class="networks-footer">
+                    <li class="social-teams">
+                        <a class="foot-soc-team" href="#">
+                            <svg class="foot-soc-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-instagram"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-teams">
+                        <a class="foot-soc-team" href="#">
+                            <svg class="foot-soc-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-twitter"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-teams">
+                        <a class="foot-soc-team" href="#">
+                            <svg class="foot-soc-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-facebook1"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="social-teams">
+                        <a class="foot-soc-team" href="#">
+                            <svg class="foot-soc-icon" width="20" height="20">
+                                <use href="./images/icons.svg#icon-linkedin2"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </footer>
 </body>
 
 </html>
