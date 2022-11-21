@@ -27,7 +27,7 @@
                     <span lang="en" class="logo">Web</span>Studio</a>
 
                 <ul class="menu-items list">
-                    <li class="menu-item"><a href="./index.html" class="caption-item">Студія</a></li>
+                    <li class="menu-item"><a href="./index.html" class="caption-item page-active">Студія</a></li>
                     <li class="menu-item"><a href="./portfolio.html" class="caption-item">Портфоліо</a></li>
                     <li class="menu-item"><a href="" class="caption-item">Контакти</a></li>
                 </ul>
@@ -59,7 +59,7 @@
 
         <section class="section hero">
             <h1 class="hero-title">Ефективні рішення <br>для вашого бізнесу</h1>
-            <button type="button" class="hero-button">Замовити послугу</button>
+            <button data-modal-open type="button" class="hero-button">Замовити послугу</button>
         </section>
 
         <!--Особливості-->
@@ -120,17 +120,20 @@
             <ul class="services-list list">
                 <li class="services-element">
                     <img class="services-foto" src="./images/img.jpg" alt="Створення сайтів" width="370" height="294">
+                    <p class="services-text">Десктопні додатки</p>
                 </li>
 
                 <li class="services-element">
                     <img class="services-foto" src="./images/box2.jpg" alt="Розробка мобільних додатків" width="370"
                         height="294">
+                    <p class="services-text">Мобільні додатки</p>
                 </li>
 
                 <li class="services-element">
                     <img class="services-foto" src="./images/box3.jpg" alt="Розробка додатків для графічних планшетів"
                         width="370" height="294">
-                </li>
+                    <p class="services-text">Дизайнерські рішення</p>
+                    </li>
             </ul>
         </section>
 
@@ -367,9 +370,8 @@
                 <address class="address">
                     <ul class="list">
                         <li class="botton-menu"><a href="https://goo.gl/maps/SFGfmpYm7TjPDnSy7" target="_blank"
-                                rel="noreferrer noopener" class="contacts-adr contacts-citi">м. Київ, пр-т Лесі
-                                Українки,
-                                26</a></li>
+                                rel="noreferrer noopener" class="contacts-adr contacts-citi">м. Київ, проспект Лесі
+                                Українки, 26</a></li>
                         <li class="botton-menu"><a href="mailto:info@devstudio.com"
                                 class="contacts-adr">info@devstudio.com</a></li>
                         <li class="botton-menu"><a href="tel:+380961111111" class="contacts-adr">+38 096 111 11 11</a>
@@ -413,8 +415,14 @@
                 </ul>
             </div>
         </div>
+   </footer>
 
-    </footer>
+   <div class="backdrop is-hidden">
+    <div data-modal class="modal">
+    <button data-modal-close type="button" class="hero-button modal-button">Закрити</button>
+    </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
