@@ -492,19 +492,24 @@ ul
 }
 
 
-.client-logos {
+.client-logos{
+    display: block;
     width: 170px;
     height: 92px;
-    border-radius: 4%;
-    border-color: #AFB1B8;
-    border-style: solid;
-    border-width: 1px;
+}
 
+.client-logo {
     display: flex;
+    width: 100%;
+    height: 100%;
     justify-content: center;
     align-items: center;
     justify-content: center;
 
+    border-radius: 4%;
+    border-color: #AFB1B8;
+    border-style: solid;
+    border-width: 1px;
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -518,20 +523,24 @@ ul
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill;
 }
+
 .sing {
     fill: currentColor;
 }
+
 .client-logos:focus-within,
 .client-logos:hover {
     border-color: #2196F3;
     border-style: solid;
     border-width: 1px;
+    border-radius: 4%;
 }
 
 .client-logos:hover .sing {
     fill: #2196F3;
 }
-.client-logos:focus-within .sing{
+
+.client-logos:focus-within .sing {
     fill: #2196F3;
 }
 
@@ -658,6 +667,61 @@ ul
     background-color: #2196F3;
 }
 
+.footer-form {
+    display: block;
+    margin-left: auto;
+}
+
+.footer-title {
+    margin-bottom: 20px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-second-color);
+}
+
+.footer-email {
+
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    background-color: var(--first-fon-color);
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    align-items: center;
+    letter-spacing: 0.03em;
+
+    color: rgba(255, 255, 255, 0.6);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+}
+
+.footer-mail-form {
+    display: flex;
+
+}
+
+.footer-button {
+    margin-left: 12px;
+    display: flex;
+    justify-content: center;
+        align-items: center;
+
+}
+
+.form-sing {
+   margin-left: 10px;
+}
+
+
 /*---------------------portfolio------------------*/
 
 /*---------button--------------*/
@@ -735,14 +799,15 @@ ul
 
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: box-shadow;
+    transition-property: box-shadow, outline;
 }
 
 .gallery-shad:hover,
-.gallery-shad:focus {
+.gallery-shad:focus-within {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
         0px 1px 2px rgba(0, 0, 0, 0.08),
         0px 2px 2px rgba(0, 0, 0, 0.12);
+    outline: 1px solid var(--accent-color);
 }
 
 .gallery-images {
@@ -757,20 +822,15 @@ ul
     padding-right: 22px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+  
 }
 
 .gallery-link {
     text-decoration: none;
 }
     
-.gallery-link.current,
-.gallery-link:hover,
-.gallery-link:focus {
-    background-color: var(--accent-color);
-    color: var(--title-second-color);
-}
-/*-----------*/
-
 .gallery-shad{
     display: block;
     position: relative;
@@ -803,11 +863,11 @@ ul
     color: var(--title-second-color);
 }
 
-.gallery-shad:hover .gallery-overlay{
+.gallery-link:hover .gallery-overlay{
     transform: translateY(0%);
 }
 
-.gallery-shad:focus-within .gallery-overlay {
+.gallery-link:focus-within .gallery-overlay {
     transform: translateY(0%);
 }
  
@@ -827,7 +887,6 @@ ul
 .gallery-headline:focus {
     background-color: var(--accent-color);
     color: var(--title-second-color);
-
 }
 
 .gallery-desk {
@@ -849,6 +908,12 @@ ul
     color: var(--title-second-color);
 }
 
+
+
+/*--------------------------*/
+
+
+
 .backdrop{
     position: fixed;
     top: 0;
@@ -864,6 +929,8 @@ ul
 }
 
 .modal{
+    padding: 40px;
+
     position: absolute;
     top: 50%;
     left: 50%;
@@ -887,3 +954,144 @@ ul
     width: 30px;
     height: 30px;
 }
+
+.title-modal{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    margin-bottom: 12px;
+}
+
+.form-input{
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);;
+    border-radius: 4px;
+    padding-left: 42px;
+    outline: transparent;
+}
+
+.form-input:focus {
+    border-color: var(--accent-color)
+}
+
+.form-input:focus + .modal-icon{
+    fill: var(--accent-color);
+}
+
+.input-label{
+    display: block;
+    position: relative;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: var(--primary-text-color);
+}
+
+.modal-icon{
+    position: absolute;
+    left: 15px;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.input-wrapper{
+    position: relative;
+    margin-top: 4px;
+    margin-bottom: 10px;
+}
+
+.text-coment{
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-top: 4px;
+    resize: none;
+    padding: 16px;
+    outline: transparent;
+}
+
+.text-coment::placeholder{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+    
+  
+}
+.text-coment:focus {
+    border-color: #2196F3;
+}
+
+
+.modal-check{
+    position: absolute;
+    appearance: none;
+}
+
+.check-text {
+   display: flex;
+   align-items: center;
+   margin-top: 20px;
+   justify-content: center;
+
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color );
+
+}
+ .check-text span{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+    width: 16px;
+    height: 15px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border: 2px solid var(--title-color);
+    border-radius: 2px;
+    margin-right: 8px;
+
+    fill: transparent;
+}
+
+.modal-check:checked + .check-text span{
+    background-color: var(--accent-color);
+    fill: var(--title-second-color);
+    border: none;
+
+}
+
+.modal-check:focus +.check-text span {
+    border-color: var(--accent-color);
+}
+
+.submit{
+    margin-top: 30px;
+    position: absolute;
+    left: 164px;
+    right: 164px;
+}
+
+.covenant{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    margin-left: 5px;
+}
+
+
