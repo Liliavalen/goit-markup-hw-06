@@ -1,0 +1,124 @@
+.gallery__heading{
+    display: none;
+}
+
+
+
+/*----------галерея робіт----------*/
+
+.gallery-tab {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: box-shadow, outline;
+}
+
+.gallery-tab__shad:hover,
+.gallery-tab__shad:focus-within {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
+    outline: 1px solid var(--accent-color);
+}
+
+.gallery-tab__images {
+    display: block;
+}
+
+.gallery-tab__text {
+    border-bottom-color: #eeee;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-left: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+  
+}
+
+.gallery-tab__link {
+    text-decoration: none;
+}
+    
+.gallery-tab__shad{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-tab__image{
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.gallery-tab__overlay{
+    display: flex;
+    position: absolute;
+    background-color: rgba(33, 150, 243, 0.9);
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 63px 24px;
+
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+    color: var(--title-second-color);
+}
+
+.gallery-tab__link:hover .gallery-tab__overlay{
+    transform: translateY(0%);
+}
+
+.gallery-tab__link:focus-within .gallery-tab__overlay {
+    transform: translateY(0%);
+}
+ 
+.gallery-tab__headline {
+    font-size: 18px;
+    line-height: 2.00;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, color;
+}
+
+.gallery-tab__headline.current,
+.gallery-tab__headline:hover,
+.gallery-tab__headline:focus {
+    background-color: var(--accent-color);
+    color: var(--title-second-color);
+}
+
+.gallery-tab__desk {
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: var(--primary-text-color);
+    margin-top: 4px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: background-color, color;
+}
+
+.gallery-tab__desk.current,
+.gallery-tab__desk:hover,
+.gallery-tab__desk:focus {
+    background-color: var(--accent-color);
+    color: var(--title-second-color);
+}

@@ -1,0 +1,164 @@
+.caption {
+    display:block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: var(--title-second-color);
+    border-bottom: 1px solid #ECECEC;
+}
+
+.main-nav {
+    position: fixed;
+    background-color: var(--title-second-color);
+    display: flex;
+    position: relative;
+    padding: 0;
+    margin: 0 auto;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+    margin-left: 0;
+}
+
+.caption-logo {
+
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--elemets-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.logo {
+    color: var(--accent-color);
+}
+
+.caption-logo.current,
+.caption-logo:focus {
+    color: var(--accent-color);
+}
+
+.logo {
+    color: var(--accent-color);
+}
+
+.caption-logo.current,
+.caption-logo:focus {
+    color: var(--accent-color);
+}
+
+.pages {
+    display: flex;
+    align-items: center;
+    margin-left: 93px;
+}
+
+.pages__menu-item{
+    position: relative;
+    display: flex;
+}
+
+    .page-active::after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    bottom: -1px;
+    left: 0;
+    opacity: 0;
+}
+
+    .page-active::after{
+    opacity:1;
+ }    
+
+
+.pages .pages__menu-item+.pages__menu-item {
+    margin-left: 50px;
+}
+
+.hookup {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.hookup .hookup__caption-el+.hookup__caption-el {
+    margin-left: 30px;
+}
+
+.caption-adr {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+
+/*-----------Heder-navi---------*/
+.pages__item {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-color);
+    cursor: pointer;
+    text-decoration: none;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+    }    
+
+.pages__.current,
+.pages__:hover,
+.pages__:focus {
+    color: var(--accent-color);
+}
+
+/*-----------Heder-contact---------*/
+
+.hookup__adr {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    gap: 10px;
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: color;
+}
+
+.hookup__adr.current,
+.hookup__adr:hover,
+.hookup__adrr:focus {
+    color: var(--accent-color);
+
+}
+
+.hookup__col {
+    fill: currentColor;
+}
