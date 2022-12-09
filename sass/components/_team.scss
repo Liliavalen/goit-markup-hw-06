@@ -57,27 +57,27 @@
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-property: fill, background-color;
+
+&:focus,
+&:hover {
+    background-color: #2196F3;
+}
 }
 
 .team__icon {
     fill: #AFB1B8;
-}
 
-.team__soc:focus,
-.team__soc:hover {
-    background-color: #2196F3;
-}
-
-.team__soc:focus .team__icon {
+.team__soc:focus & {
     fill: #FFFFFF;
 }
 
-.team__soc:hover .team__icon {
+.team__soc:hover & {
     fill: #FFFFFF;
+}    
 }
+
 
 .team__list-title {
-
     text-align: center;
     font-size: 16px;
     line-height: 1.19;

@@ -14,13 +14,14 @@
 .services__foto{
     display: block;}
 
-.services__list .services__element+.services__element {
-    margin-left: 30px;
-}
+
 
 .services__element{
     display: block;
     position: relative;
+.services__list &+& {
+        margin-left: 30px;
+    }
 }
 
 .services__text{
@@ -35,7 +36,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
-   justify-content: center;
+    justify-content: center;
     align-items:center;
     letter-spacing: 0.03em;
     text-transform: uppercase;

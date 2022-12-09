@@ -15,11 +15,26 @@
     padding: 0;
 }
 
-
 .client__logos{
     display: block;
     width: 170px;
     height: 92px;
+
+&:focus-within,
+&:hover {
+    border-color: #2196F3;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 4%;
+}
+
+&:hover .client__sing {
+    fill: #2196F3;
+}
+
+&:focus-within .client__sing {
+    fill: #2196F3;
+} 
 }
 
 .client__logo {
@@ -52,18 +67,3 @@
     fill: currentColor;
 }
 
-.client__logos:focus-within,
-.client__logos:hover {
-    border-color: #2196F3;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 4%;
-}
-
-.client__logos:hover .client__sing {
-    fill: #2196F3;
-}
-
-.client__logos:focus-within .client__sing {
-    fill: #2196F3;
-}

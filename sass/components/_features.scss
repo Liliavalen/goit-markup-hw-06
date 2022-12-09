@@ -2,16 +2,15 @@
     display: flex;
 }
 
-.features__tab .features__blok+.features__blok {
-    margin-left: 30px;
-}
-
 .features__heading {
     display: none;
 }
 
 .features__blok {
     width: 270px;
+.features__tab &+& {
+    margin-left: 30px;
+}
 }
 
 .features__title {
